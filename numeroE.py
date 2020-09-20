@@ -6,3 +6,13 @@ def factorial(n):
     else:
         n = n * factorial(n-1)
     return n
+
+limite = 300
+n = 0
+e = 0
+
+for n in range(0,limite):
+    e += 1 / factorial(n)
+    n = n + 1
+
+print("El número e = ", e)
